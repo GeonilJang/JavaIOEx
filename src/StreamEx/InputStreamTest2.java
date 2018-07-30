@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class InputStreamTest2 {
 	public static void main(String[] args) {
-		byte [] input = new byte[10];
+		byte [] input = new byte[5];
 		
 		int i=0; 
 		int cnt=0;
@@ -19,6 +19,8 @@ public class InputStreamTest2 {
 			}
 			System.out.println("cnt : "+cnt);
 			System.out.println("읽은 바이트 수 :"+tot);
+			System.in.close();
+			System.out.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
